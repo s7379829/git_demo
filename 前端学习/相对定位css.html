@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+     div{
+     	width: 200px;
+     	height: 200px;
+     }
+     .box1{
+     	background-color: green;
+     	position: absolute; /*绝对定位，脱标了*/
+     	top: 100px;
+     	left: 100px;
+     }
+     .box2{
+     	background-color: yellow;
+     	position: relative; /*相对定位*/
+     	left:100px;
+     	top: 100px;/* 相对移动*/
+     }
+     .box3{
+     	background-color: red;
+     	position: relative;
+
+     }
+     p{
+     	width: 100px;
+     	height: 100px;
+     	position: absolute; /*当父元素有定位时，以父元素为锚点*/
+     	top: 100px;
+     	left: 100px;
+     }
+     .box4{
+     	width: 100px;
+     	height: 100px;
+     	position: fixed;  /*固定定位，置顶，导航条怎么滚都不懂*/
+     	bottom: 100px;
+     	right: 100px;
+
+     }
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"><p></p></div>
+	<div class="box4"></div>
+	
+</body>
+</html>

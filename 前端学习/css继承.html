@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	div{/*继承，他下面的元素也会变蓝,关于文字样式的可以继承 id》class》标签，直接选中大于不选中，同等情况就近原则*/
+		color: blue ;
+	}
+	p{
+		color: blue !important;/*important提升这个属性的权重无限大，不可用在继承*/
+	}
+	</style>
+</head>
+<body>
+<div> 
+	<p>我是段落</p>
+	<p>我是段落</p>
+	<p>我是段落</p>
+
+</div>
+	 
+</body>
+</html>

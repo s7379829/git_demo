@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box1{
+			float: left;  /*浮动，并排放在左边*/
+			width: 300px;
+			height: 400px;
+			background-color: yellowgreen;
+		}
+		.box2{
+			float: left;
+			width: 400px;
+			height: 400px;
+			background-color: skyblue;
+		}
+	</style>
+
+	<style type="text/css">
+		div{
+			height: 90px; /*消除浮动的方法，父亲加高度*/
+		}
+
+	   li{
+	   	float: left;
+	   	width: 90px;
+	   	height: 40px;
+	   	background-color: gold;
+
+	   	text-align: center;
+	   }
+	   .box2{
+	   	clear: both;  /*清除所有浮动 但margin间隔会失效*/
+	   }
+
+	   .cl{
+	    clear: both;  /*隔墙法,中间加一个div，并clear both  并可以设置高度*/
+	   }
+	   .h10{
+	   	height: 10px;
+	   }
+
+	   .yichu{
+	   	width: 50px;
+	   	height: 50px
+	   	border : 1px solid red;
+		overflow: hidden;/*溢出隐藏，清除浮动方法4,父元素有溢出隐藏属性，会被浮动的子元素撑出高*/
+	   }
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+
+	<div>
+		<ul>
+			<li>html</li>
+			<li>css</li>
+			<li>js</li>
+		</ul>
+		<div class="cl h10"></div> <!-- 内墙法 -->
+	</div>
+
+	<div class="cl h10"></div> <!-- 隔墙法 -->
+
+	<div class="box2">
+		<ul>
+			<li>java</li>
+			<li>.net</li>
+			<li>c</li>
+		</ul>
+	</div>
+
+	<div class="yichu">
+	<p></p>我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅我好帅</p>
+	</div>
+
+	
+</body>
+</html>

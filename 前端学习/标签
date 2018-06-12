@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>	
+<!--这是注释-->
+	标签:for表示绑定id  
+
+	<input type="radio" name="sex" id="nan"><label for="nan">男</label>
+	<input type="radio" name="sex"  id="lv"><label for="lv">女</label><br>
+
+	字符实体<br>
+	小于号 &lt; &#60
+	大于号 &gt; &#62
+	空格   &nbsp
+	
+</body>
+</html>
